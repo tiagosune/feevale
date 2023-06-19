@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btSomar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/btIgual"
+        app:layout_constraintTop_toBottomOf="@+id/btSubtrair" />
+
+    <TextView
+        android:id="@+id/expressao"
+        android:layout_width="398dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btApagar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Apagar"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btLimpar"
+        app:layout_constraintTop_toBottomOf="@+id/expressao" />
+
+    <Button
+        android:id="@+id/btHistorico"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="acessarHistorico"
+        android:text="H"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expressao" />
+
+    <Button
+        android:id="@+id/btLimpar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="C"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btHistorico"
+        app:layout_constraintTop_toBottomOf="@+id/expressao" />
+
+    <Button
+        android:id="@+id/btNum7"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btHistorico" />
+
+    <Button
+        android:id="@+id/btDividir"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="/"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btNum9"
+        app:layout_constraintTop_toBottomOf="@+id/btApagar" />
+
+    <Button
+        android:id="@+id/btNum9"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum8"
+        app:layout_constraintTop_toBottomOf="@+id/btLimpar" />
+
+    <Button
+        android:id="@+id/btNum8"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="8"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum7"
+        app:layout_constraintTop_toBottomOf="@+id/btLimpar" />
+
+    <Button
+        android:id="@+id/btNum4"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNum7" />
+
+    <Button
+        android:id="@+id/btNum5"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="5"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum4"
+        app:layout_constraintTop_toBottomOf="@+id/btNum8" />
+
+    <Button
+        android:id="@+id/btNum6"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="6"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum5"
+        app:layout_constraintTop_toBottomOf="@+id/btNum9" />
+
+    <Button
+        android:id="@+id/btMultiplicar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="X"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btNum6"
+        app:layout_constraintTop_toBottomOf="@+id/btDividir" />
+
+    <Button
+        android:id="@+id/btNum1"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNum4" />
+
+    <Button
+        android:id="@+id/btNum2"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="2"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum1"
+        app:layout_constraintTop_toBottomOf="@+id/btNum5" />
+
+    <Button
+        android:id="@+id/btNum3"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum2"
+        app:layout_constraintTop_toBottomOf="@+id/btNum6" />
+
+    <Button
+        android:id="@+id/btSubtrair"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btNum3"
+        app:layout_constraintTop_toBottomOf="@+id/btMultiplicar" />
+
+    <Button
+        android:id="@+id/btPonto"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNum1" />
+
+    <Button
+        android:id="@+id/btNum0"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btPonto"
+        app:layout_constraintTop_toBottomOf="@+id/btNum2" />
+
+    <Button
+        android:id="@+id/btIgual"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="="
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btNum0"
+        app:layout_constraintTop_toBottomOf="@+id/btNum3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
